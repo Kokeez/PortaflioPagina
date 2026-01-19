@@ -1,4 +1,4 @@
-# 👨‍💻 Portafolio Profesional - Jorge Reyes
+#  Portafolio Profesional - Jorge Reyes
 
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -8,9 +8,9 @@ Bienvenido al repositorio de mi portafolio personal. Este proyecto es una Single
 
 ##  Características Principales
 
-*   **Diseño Moderno y Minimalista**: Interfaz limpia centrada en la experiencia de usuario (UX) con tipografía *Poppins*.
-*   **Animaciones Fluidas**: Efectos de entrada (`fade-in-up`), fondo animado en el Hero y transiciones suaves.
-*   **Diseño Responsivo**: Totalmente adaptado para móviles, tablets y escritorio.
+*   **Diseño Moderno y Minimalista**
+*   **Animaciones**
+*   **Diseño Responsivo**
 *   **Secciones Dinámicas**:
     *   **Hero**: Presentación con fondo de gradiente animado.
     *   **Experiencia**: Línea de tiempo detallada de mi trayectoria profesional.
@@ -46,7 +46,7 @@ Sigue estos pasos para correr el proyecto en tu máquina local:
     ```
     Abre tu navegador en `http://localhost:4200/`.
 
-## 📦 Construcción para Producción
+##  Construcción para Producción
 
 Para generar los archivos optimizados para producción:
 
@@ -55,7 +55,7 @@ ng build
 ```
 Los archivos se generarán en la carpeta `dist/`.
 
-## 📬 Contacto
+##  Contacto
 
 Si te interesa mi perfil o quieres colaborar en algún proyecto, no dudes en contactarme:
 
