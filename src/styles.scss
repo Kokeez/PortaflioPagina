@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@use "sass:color";
+
+:root {
+    --primary-color: #2563eb;
+    /* Bright Blue */
+    --secondary-color: #1e293b;
+    /* Dark Blue/Slate */
+    --accent-color: #3b82f6;
+    --text-color: #334155;
+    --heading-color: #0f172a;
+    --background-color: #ffffff;
+    --light-bg: #f8fafc;
+    --white: #ffffff;
+
+    --font-sans: 'Poppins', sans-serif;
+    --font-serif: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--font-sans);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+
+    &.btn-primary {
+        background-color: var(--primary-color);
+        color: var(--white);
+        box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+
+        &:hover {
+            background-color: color.adjust(#2563eb, $lightness: -10%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+        }
+    }
+
+    &.btn-outline {
+        background-color: transparent;
+        border: 2px solid #e2e8f0;
+        color: var(--heading-color);
+
+        &:hover {
+            border-color: var(--heading-color);
+            background-color: var(--heading-color);
+            color: var(--white);
+        }
+    }
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Animation Utilities */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

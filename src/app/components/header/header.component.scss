@@ -1,0 +1,61 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 30px;
+
+        a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-color);
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: var(--primary-color);
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: var(--primary-color);
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .btn-sm {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
