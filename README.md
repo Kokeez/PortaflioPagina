@@ -1,4 +1,6 @@
-# PortfolioApp
+# Portfolio: Jorge Reyes
+
+Mi portafolio y página web de presentación.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
 
